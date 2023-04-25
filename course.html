@@ -65,6 +65,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
 	    </script>
+	<script>
+		dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+    currency: "INR",
+    items: [
+     {
+      item_id : "ABC",
+      item_name : "PYTHON",
+      affiliation : "COURSE",
+      currency : "INR"
+    },
+    {
+      item_id : "ABC",
+      item_name : "PYTHON",
+      affiliation : "COURSE",
+      currency : "INR"
+    }]
+  }
+}); 
+	</script>
 	
     <title>Course Page</title>
 </head>
